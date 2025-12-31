@@ -4,9 +4,8 @@ import { FaInstagram, FaTiktok, FaLinkedin } from "react-icons/fa";
 export default function About() {
 
   const socialLinks = [
-    { title: "Instagram", url: "https://instagram.com/", icon: <FaInstagram /> },
-    { title: "TikTok", url: "https://tiktok.com/", icon: <FaTiktok /> },
-    { title: "LinkedIn", url: "https://linkedin.com/", icon: <FaLinkedin /> },
+    { title: "Instagram", url: "https://www.instagram.com/magic_m00nchild/", icon: <FaInstagram /> },
+    { title: "TikTok", url: "https://www.tiktok.com/@magic_m00nchild", icon: <FaTiktok /> },
   ];
 
   return (
