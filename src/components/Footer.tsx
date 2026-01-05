@@ -1,8 +1,14 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} Dorit</p>
-      <a href="/impress">Impressum</a>
+      <p className="footer__copy">
+        © {new Date().getFullYear()} Dorit
+      </p>
+
+      <nav className="footer__links">
+        <a href="/impress">Impressum</a>
+        <a href="/privacy">Datenschutz</a>
+      </nav>
     </footer>
   );
 }

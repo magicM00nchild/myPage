@@ -1,5 +1,5 @@
 import Card from "../components/Card";
-import { FaInstagram, FaTiktok, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaTiktok } from "react-icons/fa";
 
 export default function About() {
 
