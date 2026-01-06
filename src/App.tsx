@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Impress from "./pages/Impress";
 import Privacy from "./pages/Privacy";
+import Valentine from "./smallProjects/valentinesDay/valentine";
+import ValentineAccepted from "./smallProjects/valentinesDay/Accepted";
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <Route path="/impress" element={<Impress />} />
         <Route path="/privacy" element={<Privacy />} />
       </Route>
+      <Route path="/valentine" element={<Valentine />} />
+      <Route path="/valentine/accepted" element={<ValentineAccepted />} />
     </Routes>
   );
 }

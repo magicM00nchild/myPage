@@ -1,0 +1,91 @@
+
+.valentine-container {
+  min-height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+}
+
+.valentine-image {
+  width: 200px;
+  max-width: 100%;
+}
+
+.valentine-headline {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.valentine-subheadline {
+  font-size: 1rem;
+  color: #d33;
+}
+
+/* Buttons */
+.valentine-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.valentine-yes,
+.valentine-no {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.2s ease;
+  touch-action: manipulation;
+}
+
+.valentine-yes {
+  background-color: #ff4d6d;
+  color: white;
+}
+
+.valentine-yes:active {
+  transform: scale(0.97);
+}
+
+.valentine-no {
+  background-color: #ccc;
+}
+
+.valentine-no:active {
+  transform: scale(0.97);
+}
+
+/* Tablets & größer */
+@media (min-width: 768px) {
+  .valentine-image {
+    width: 250px;
+  }
+
+  .valentine-headline {
+    font-size: 2rem;
+  }
+
+  .valentine-subheadline {
+    font-size: 1.2rem;
+  }
+
+  .valentine-buttons {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .valentine-yes,
+  .valentine-no {
+    width: auto;
+    min-width: 140px;
+  }
+}

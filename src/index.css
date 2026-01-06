@@ -10,6 +10,10 @@ body {
   color: #222;
 }
 
+body.valentine-page {
+  background-color: #fff0f5; /* z.B. rosa */
+}
+
 /* Navbar */
 .nav {
   display: flex;

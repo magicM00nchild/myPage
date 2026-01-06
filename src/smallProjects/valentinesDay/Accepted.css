@@ -1,0 +1,39 @@
+.accepted-container {
+  min-height: 100vh;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.accepted-headline {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* Tile */
+.tile {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tile:active {
+  transform: scale(0.97);
+}
+
+/* Tablet / Desktop */
+@media (min-width: 768px) {
+  .tiles-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
