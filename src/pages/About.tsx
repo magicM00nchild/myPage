@@ -1,7 +1,11 @@
 import Card from "../components/Card";
-import { FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaPen } from "react-icons/fa";
 
 export default function About() {
+
+  const differntLinks = [
+    { title: "Skit suggestion form", url: "https://forms.gle/LgR13Va5MVaHTBka6", icon: <FaPen />}
+  ]
 
   const socialLinks = [
     { title: "Instagram", url: "https://www.instagram.com/magic_m00nchild/", icon: <FaInstagram /> },
@@ -10,6 +14,12 @@ export default function About() {
 
   return (
     <section className="about">
+      <h2>Might be interesting</h2>
+      <div className="cards-container">
+        {differntLinks.map((link) => (
+          <Card key={link.title} title={link.title} url={link.url} icon={link.icon} />
+        ))}
+      </div>
       <h2>Find me on social media</h2>
       <div className="cards-container">
         {socialLinks.map((link) => (
