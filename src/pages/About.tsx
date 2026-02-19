@@ -1,10 +1,14 @@
 import Card from "../components/Card";
 import { FaInstagram, FaTiktok, FaPen } from "react-icons/fa";
+import { TbCards } from "react-icons/tb";
+
 
 export default function About() {
 
   const differntLinks = [
-    { title: "Skit suggestion form", url: "https://forms.gle/LgR13Va5MVaHTBka6", icon: <FaPen />}
+    { title: "Skit suggestion form", url: "https://forms.gle/LgR13Va5MVaHTBka6", icon: <FaPen />},
+    { title: "Ebay trading cards", url: "https://www.ebay.de/sch/i.html?item=127690029793&rt=nc&_trksid=p4429486.m3561.l161211&_ssn=starlight_13", icon: <TbCards />}
+
   ]
 
   const socialLinks = [
